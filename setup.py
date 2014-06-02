@@ -33,7 +33,7 @@ classifiers = [ "Development Status :: 5 - Production/Stable",
 license = "http://creativecommons.org/licenses/BSD/"
 keywords = "ipc inter-process communication semaphore shared memory shm message queue"
 
-libraries = [ ]
+libraries = ['mman','pthread']
 
 d = prober.probe()
 

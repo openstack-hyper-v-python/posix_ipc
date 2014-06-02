@@ -1,0 +1,3 @@
+LIBRARY posix_ipc.pyd
+EXPORTS
+initposix_ipc

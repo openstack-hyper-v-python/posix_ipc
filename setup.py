@@ -35,7 +35,6 @@ keywords = "ipc inter-process communication semaphore shared memory shm message 
 
 libraries = ['mman','pthread']
 include_dirs = ['C:\MinGW\include']
-headers=['C:\MinGW\include\stdint.h']
 
 d = prober.probe()
 
@@ -48,7 +47,6 @@ ext_modules = [ duc.Extension("posix_ipc",
                               source_files,
                               libraries=libraries,
                               include_dirs=include_dirs,
-                              headers=headers,
                               depends = [ "posix_ipc_module.c", 
                                           "probe_results.h", 
                                         ],

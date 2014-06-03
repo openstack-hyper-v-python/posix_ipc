@@ -40,6 +40,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <errno.h>
 #include <stdio.h>
 
+#include <Python.h>
+
 // Just for the math surrounding timeouts for sem_timedwait()
 #include <math.h>
 
@@ -60,8 +62,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // For msg queues
 #include <mqueue.h>
 #endif
-
-#include <Python.h>
 
 // define Py_TYPE for versions before Python 2.6
 #ifndef Py_TYPE

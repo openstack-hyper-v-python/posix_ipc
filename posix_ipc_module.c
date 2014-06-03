@@ -31,6 +31,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define PY_SSIZE_T_CLEAN
 #define SEM_FAILED NULL
 #include <unistd.h>
+#include <Python.h>
 
 #include "structmember.h"
 
@@ -39,8 +40,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <fcntl.h>
 #include <errno.h>
 #include <stdio.h>
-
-#include <Python.h>
 
 // Just for the math surrounding timeouts for sem_timedwait()
 #include <math.h>

@@ -31,6 +31,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define PY_SSIZE_T_CLEAN
 #define SEM_FAILED NULL
 #include <unistd.h>
+#include <stdint.h>
 #include <Python.h>
 
 #include "structmember.h"

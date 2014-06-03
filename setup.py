@@ -34,7 +34,6 @@ license = "http://creativecommons.org/licenses/BSD/"
 keywords = "ipc inter-process communication semaphore shared memory shm message queue"
 
 libraries = ['mman','pthread']
-include_dirs = ['C:\MinGW\include']
 
 d = prober.probe()
 
@@ -46,7 +45,6 @@ if "REALTIME_LIB_IS_NEEDED" in d:
 ext_modules = [ duc.Extension("posix_ipc", 
                               source_files,
                               libraries=libraries,
-                              include_dirs=include_dirs,
                               depends = [ "posix_ipc_module.c", 
                                           "probe_results.h", 
                                         ],
